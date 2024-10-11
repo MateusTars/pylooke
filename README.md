@@ -1,5 +1,5 @@
 # pylooke
-Python library for interacting with Looke API.
+Python library for interacting with [Looke](https://www.looke.com.br/) API.
 
 # Installation
 ```
@@ -70,14 +70,12 @@ if __name__ == "__main__":
 
     # Get media details(Title, year, description, manifest, subtitles and etc)
     media_result = looke.find_media(media_id)
-    print(media_result)
 
     # Login with username and password
     login_essentials_result = looke.login_essentials(
         username="example@email.com",
         password="example12345"
     )
-    print(login_essentials_result)
 
     # Acquiring EME license response(bytes)
     challenge = b"" # EME license request(bytes)
@@ -87,5 +85,4 @@ if __name__ == "__main__":
         user_id=login_essentials_result["User"]["UserId"],
         machine_id=login_essentials_result["MachineId"]
     )
-    print(license_response)
 ```

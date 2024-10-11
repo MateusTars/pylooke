@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pylooke"
+version = "1.0.0"
+description = "Python library for interacting with Looke API."
+authors = ["MateusTars"]
+license = "GPL-3.0-or-later"
+readme = "README.md"
+repository = "https://github.com/MateusTars/pylooke"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+requests = "^2.32.3"
+click = "^8.1.7"
+subby = {git = "https://github.com/vevv/subby.git", branch = "main"}
+pathvalidate = "^3.2.1"
+pycryptodomex = "^3.21.0"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+pylooke = "pylooke.cli:main"

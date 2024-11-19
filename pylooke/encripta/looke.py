@@ -240,6 +240,7 @@ class Looke:
             method=kwargs["method"],
             url=kwargs["url"],
             headers=headers,
+            params=kwargs.get("params", {}),
             json=kwargs.get("json", None),
             data=kwargs.get("data", None)
         )

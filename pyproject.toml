@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pylooke"
-version = "1.0.0"
+version = "1.0.1"
 description = "Python library for interacting with Looke API."
 authors = ["MateusTars"]
 license = "GPL-3.0-or-later"

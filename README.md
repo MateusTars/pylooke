@@ -63,7 +63,7 @@ from pylooke.encripta.looke import Looke
 
 if __name__ == "__main__":
     # For example, media ID for https://www.looke.com.br/detalhes/421002 is 421002.
-    media_id = 421002 # int
+    media_id = 421002  # int
 
     # Initialize the Looke client
     looke = Looke()
@@ -78,7 +78,7 @@ if __name__ == "__main__":
     )
 
     # Acquiring EME license response(bytes)
-    challenge = b"" # EME license request(bytes)
+    challenge = b""  # EME license request(bytes)
     license_response = looke.get_license(
         challenge=challenge,
         media_id=media_id,
